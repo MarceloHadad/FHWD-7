@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FHWD-7</title>
+		<style>
+			.codeSnippet {
+				background-color: #f5f5f5;
+				color: tomato;
+				padding: 2px 4px;
+				border-radius: 4px;
+				font-family: monospace;
+			}
+
+			.topic {
+				background-color: lightgray;
+			}
+
+			.home {
+				display: inline-block;
+				padding: 5px 10px;
+				font-size: 13px;
+				color: #fff;
+				background-color: #007bff;
+				border: none;
+				border-radius: 5px;
+				text-decoration: none;
+				text-align: center;
+			}
+
+			body {
+				font-family: Calibri;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="home">Primeiros Passos com HTML</h1>
+		<nav>
+			<h2>Índice</h2>
+			<ul>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#paragraphs">Parágrafos</a></li>
+				<li><a href="#text-formatting">Formatação de texto</a></li>
+				<li><a href="#text-quotes">Citações em um texto</a></li>
+				<li><a href="#separators">Separadores</a></li>
+				<li><a href="#lists">Listas</a></li>
+				<li><a href="#links">Links</a></li>
+				<li><a href="#styles">Estilos</a></li>
+			</ul>
+		</nav>
+		<h2 id="headings" class="topic">Headings</h2>
+		<p>
+			As tags de headings são úteis para criar uma hierarquia visual na página.
+			A tag <code class="codeSnippet">&lt;h1&gt;</code> é geralmente usada para
+			o título principal da página, enquanto as tags
+			<code class="codeSnippet">&lt;h2&gt;</code> até o
+			<code class="codeSnippet">&lt;h6&gt;</code> são usadas para subtítulos ou
+			seções menores.
+		</p>
+		<section>
+			<h3>Acessibilidade</h3>
+			<p>
+				Além de ajudar a organizar o conteúdo visualmente, as tags de headings
+				são importantes para a acessibilidade. Leitores de tela usam as tags de
+				headings para facilitar a navegação, permitindo que os usuários acessem
+				diretamente as seções de interesse. Além disso, algumas tecnologias
+				assistivas podem criar uma representação visual da estrutura da página,
+				facilitando a experiência para usuários com deficiência visual.
+			</p>
+		</section>
+		<section>
+			<h3>SEO (Search Engine Optimization)</h3>
+			<p>
+				As tags de headings são cruciais para o SEO. Os motores de busca, como o
+				Google, utilizam as tags de headings para entender o conteúdo e a
+				estrutura da página, o que pode impactar diretamente na classificação
+				nos resultados de pesquisa. Usar headings de forma consistente ajuda a
+				destacar tópicos importantes e aumenta a visibilidade da página.
+			</p>
+		</section>
+		<section>
+			<h3>UX</h3>
+			<p>
+				Uma estrutura clara e organizada de headings melhora a experiência do
+				usuário (UX). Páginas bem estruturadas são mais fáceis de navegar e
+				entender, proporcionando uma leitura fluida. Isso pode aumentar o
+				engajamento e direcionar os usuários para as informações mais
+				importantes.
+			</p>
+		</section>
+		<section>
+			<h3>Boas práticas</h3>
+			<p>Para usar as tags de headings corretamente, siga estas diretrizes:</p>
+			<ul>
+				<li>
+					<strong>Use as tags de headings em ordem:</strong> Comece com a tag
+					<code class="codeSnippet">&lt;h1&gt;</code> para o título principal da
+					página e siga com as tags <code class="codeSnippet">&lt;h2&gt;</code>,
+					<code class="codeSnippet">&lt;h3&gt;</code> e assim por diante.
+				</li>
+				<li>
+					<strong>Não pule tags de headings:</strong> Usar tags fora de ordem
+					pode confundir leitores de tela e motores de busca.
+				</li>
+				<li>
+					<strong>Use headings de forma significativa:</strong> Destaque títulos
+					e seções importantes, evitando usá-las apenas para estilizar texto.
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Exemplo de Estrutura</h3>
+			<code>
+				<h1>Título Principal</h1>
+				<h2>Seção 1</h2>
+				<p>Texto da seção 1.</p>
+				<h3>Subseção 1.1</h3>
+				<p>Texto da subseção 1.1.</p>
+				<h2>Seção 2</h2>
+				<p>Texto da seção 2.</p>
+			</code>
+		</section>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="paragraphs" class="topic">Parágrafos</h2>
+		<p>
+			A tag <code class="codeSnippet">&lt;p&gt;</code> é usada para criar
+			parágrafos de texto. Cada parágrafo é exibido em um bloco único e se
+			adapta automaticamente ao tamanho da janela do navegador ou da tela do
+			dispositivo.
+		</p>
+		<p>
+			Os navegadores adicionam automaticamente uma quebra de linha antes e
+			depois de um parágrafo, criando um espaço em branco que separa visualmente
+			os parágrafos. Isso melhora a legibilidade, especialmente em textos
+			longos.
+		</p>
+		<p>
+			A tag <code class="codeSnippet">&lt;p&gt;</code> também tem um papel
+			semântico, indicando ao navegador e aos leitores de tela que o conteúdo
+			dentro dela representa um parágrafo de texto. Para estilizar ou ajustar o
+			espaçamento entre parágrafos, é recomendável usar CSS.
+		</p>
+		<h3>Exemplo de uso</h3>
+		<code>
+			<p>Este é o primeiro parágrafo de um texto.</p>
+			<p>Este é o segundo parágrafo.</p>
+		</code>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="text-formatting" class="topic">Formatação de texto</h2>
+		<p>
+			O HTML oferece várias tags para formatar o texto, como negrito, itálico,
+			sublinhado e muito mais. Aqui estão algumas dessas tags:
+		</p>
+		<ul>
+			<li>
+				<b>negrito:</b> a tag <code class="codeSnippet">&lt;b&gt;</code> é usada
+				para deixar o texto em negrito, destaca o texto porém não o define como
+				um texto importante.
+			</li>
+			<li>
+				<strong>forte:</strong> a tag
+				<code class="codeSnippet">&lt;strong&gt;</code> é usada para destacar o
+				texto como importante. Ela é geralmente exibida em negrito, mas o
+				significado semântico é de maior importância do que o estilo visual.
+			</li>
+			<li>
+				<i>itálico:</i> a tag <code class="codeSnippet">&lt;i&gt;</code> é usada
+				para deixar o texto em itálico. É geralmente usada para indicar um termo
+				técnico, um pensamento ou uma palavra em outro idioma.
+			</li>
+			<li>
+				<em>ênfase:</em> a tag <code class="codeSnippet">&lt;em&gt;</code> é
+				usada para enfatizar o texto. Ela é geralmente exibida em itálico, mas o
+				significado semântico é de maior importância do que o estilo visual.
+			</li>
+			<li>
+				<u>sublinhado:</u> a tag <code class="codeSnippet">&lt;u&gt;</code> é
+				usada para sublinhar o texto. É recomendado não utilizar essa tag em
+				trechos que podem ser confundidos com links.
+			</li>
+			<li>
+				<del>riscado:</del> a tag <code class="codeSnippet">&lt;del&gt;</code> é
+				usada para riscar o texto. Essa tag representa um texto que foi removido
+				ou que não é mais válido.
+			</li>
+			<li>
+				<sup>sobrescrito:</sup> a tag
+				<code class="codeSnippet">&lt;sup&gt;</code> é usada para colocar o
+				texto em sobrescrito. O texto aparece acima da linha de base e é
+				geralmente usado para indicar uma nota de rodapé ou uma referência. Como
+				por exemplo, WWW<sup>[1]</sup>.
+			</li>
+			<li>
+				<sub>subscrito:</sub> a tag
+				<code class="codeSnippet">&lt;sub&gt;</code> é usada para colocar o
+				texto em subscrito. O texto aparece abaixo da linha de base e é
+				geralmente usado para indicar uma fórmula química como H<sub>2</sub>O.
+			</li>
+			<li>
+				<mark>destaque:</mark> a tag
+				<code class="codeSnippet">&lt;mark&gt;</code> é usada para destacar o
+				texto.
+			</li>
+			<li>
+				<small>pequeno:</small> a tag
+				<code class="codeSnippet">&lt;small&gt;</code> é usada para diminuir o
+				tamanho do texto. Como uma nota de rodapé ou uma legenda.
+			</li>
+		</ul>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="text-quotes" class="topic">Citações em um texto</h2>
+		<p>
+			As citações são uma parte importante de muitos textos, seja para citar
+			outras fontes, adicionar contexto ou fornecer exemplos. Em HTML, existem
+			várias tags que podem ser usadas para criar citações. Aqui estão as
+			principais:
+		</p>
+		<ul>
+			<li>
+				<strong><code class="codeSnippet">&lt;blockquote&gt;</code></strong
+				>: Usada para citar um bloco de texto longo, como um parágrafo ou uma
+				seção inteira de texto.
+				<blockquote>
+					<p>Este é um exemplo de citação longa.</p>
+				</blockquote>
+			</li>
+			<li>
+				<strong><code class="codeSnippet">&lt;q&gt;</code></strong
+				>: Usada para citar um trecho curto de texto, como uma frase ou uma
+				passagem curta. Os navegadores geralmente adicionam aspas
+				automaticamente ao texto.
+				<p><q>Este é um exemplo de citação curta.</q></p>
+			</li>
+			<li>
+				<strong><code class="codeSnippet">&lt;cite&gt;</code></strong
+				>: Usada para citar a fonte de uma informação, como o autor de um texto
+				ou o título de um livro. Geralmente, os navegadores exibem o conteúdo em
+				itálico.
+				<p><cite>Este é um exemplo de citação de fonte.</cite></p>
+			</li>
+
+			<li>
+				<strong><code class="codeSnippet">&lt;abbr&gt;</code></strong
+				>: Usada para indicar uma abreviação. É recomendado adicionar o atributo
+				<code>title</code> para descrever o termo completo.
+				<p>
+					Este é um exemplo de abreviação:
+					<abbr title="HyperText Markup Language">HTML</abbr>.
+				</p>
+			</li>
+		</ul>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="separators">Separadores</h2>
+		<p>
+			A tag <code class="codeSnippet">&lt;hr&gt;</code> é usada para criar uma
+			linha horizontal em uma página HTML. Ela é geralmente usada para separar
+			seções de conteúdo ou para adicionar um efeito visual de divisão. A tag
+			<code class="codeSnippet">&lt;hr&gt;</code>
+			é uma tag vazia, o que significa que não tem uma tag de fechamento
+			correspondente. Aqui está um exemplo de como ela funciona:
+		</p>
+		<hr />
+		<p>
+			A linha horizontal é exibida como uma linha sólida que se estende por toda
+			a largura da página. Você pode personalizar a aparência da linha
+			horizontal usando CSS, como alterando a cor, a espessura ou o estilo da
+			linha.
+		</p>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="lists" class="topic">Listas</h2>
+		<p>
+			As listas são uma forma eficaz de organizar e apresentar informações em um
+			texto. Em HTML, existem três tipos principais de listas que podem ser
+			usadas:
+		</p>
+		<ul>
+			<li>
+				<strong>listas ordenadas:</strong>
+				a tag
+				<code class="codeSnippet">&lt;ol&gt;</code>
+				é usada para criar listas ordenadas, onde cada item é numerado. O
+				caractere de numeração pode ser alterado usando o atributo type, alguns
+				exemplos são: "1" (números), "A" (letras maiúsculas) e "I" (números
+				romanos maiúsculos). Veja na prática:
+				<ol type="1">
+					<li type="1">Item 1</li>
+					<li type="A">Item 2</li>
+					<li type="I">Item 3</li>
+				</ol>
+			</li>
+			<li>
+				<strong>listas não ordenadas:</strong>
+				a tag
+				<code class="codeSnippet">&lt;ul&gt;</code>
+				é usada para criar listas não ordenadas, onde cada item é marcado com um
+				ponto ou outro símbolo. O tipo de marcador pode ser alterado usando o
+				atributo type, alguns exemplos são: "disc" (ponto preto), "circle"
+				(círculo vazio) e "square" (quadrado). Veja na prática:
+				<ul>
+					<li type="disc">Item 1</li>
+					<li type="circle">Item 2</li>
+					<li type="square">Item 3</li>
+				</ul>
+			</li>
+			<li>
+				<strong>listas de definição:</strong> a tag
+				<code class="codeSnippet">&lt;dl&gt;</code> é usada para criar listas de
+				definição, onde cada item é composto por um termo seguido de sua
+				definição. Veja na prática:
+				<dl>
+					<dt>Termo</dt>
+					<dd>- Definição</dd>
+				</dl>
+			</li>
+		</ul>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="links" class="topic">Links</h2>
+		<p>
+			Em HTML, os links são criados usando a tag
+			<code class="codeSnippet">&lt;a&gt;</code>, que é abreviação de "anchor"
+			(âncora). Aqui está um exemplo de como criar um link em HTML:
+		</p>
+		<p>
+			<a href="https://www.google.com" target="_blank"
+				>Clique aqui para visitar o Google em uma nova aba</a
+			>
+		</p>
+		<p>
+			<a
+				href="https://marcelohadad.github.io/js-developer-portfolio/"
+				target="_blank"
+				>Clique aqui para visitar meu porfólio em uma nova aba</a
+			>
+		</p>
+		<p>
+			Para criar um link em HTML, você precisa usar a tag
+			<code class="codeSnippet">&lt;a&gt;</code> e o atributo href, que
+			especifica o URL para o qual o link aponta. O texto entre as tags de
+			abertura e fechamento é o texto do link, que é exibido para o usuário como
+			o texto clicável.
+		</p>
+		<a href="#home" class="home">Voltar ao Início</a>
+		<h2 id="styles" class="topic">Estilos</h2>
+		<p>
+			Os estilos são uma parte importante do design de uma página web,
+			permitindo que os desenvolvedores personalizem a aparência e o layout do
+			conteúdo. No passado, era comum usar a tag
+			<code class="codeSnippet">&lt;font&gt;</code> para definir o estilo do
+			texto diretamente no HTML, como cor, tamanho e fonte. No entanto, com a
+			evolução das boas práticas de desenvolvimento, essa tag foi descontinuada
+			no HTML5.
+		</p>
+		<p>
+			Atualmente, os estilos são aplicados de maneira mais eficiente e flexível
+			utilizando CSS (Cascading Style Sheets), que é uma linguagem de estilo
+			separada do HTML. Em HTML, os estilos podem ser aplicados de várias
+			maneiras, incluindo:
+		</p>
+		<ul>
+			<li>
+				<strong>Estilos embutidos:</strong> os estilos embutidos são
+				especificados diretamente no elemento HTML usando o atributo
+				<code class="codeSnippet">&lt;style&gt;</code>. Por exemplo, você pode
+				adicionar o seguinte código a um elemento p:
+				<code class="codeSnippet">
+					&lt;p style="color: red; font-size: 16px"&gt;
+				</code>
+				<p>E com isso você terá o seguinte resultado:</p>
+				<p style="color: red; font-size: 16px">Lorem ipsum</p>
+			</li>
+			<li>
+				<strong>Estilos internos:</strong> os estilos internos são definidos no
+				cabeçalho da página usando a tag
+				<code class="codeSnippet">&lt;style&gt;</code> Por exemplo, dentro da
+				<code class="codeSnippet">&lt;head&gt;</code> da página você pode
+				adicionar o seguinte código:
+				<code class="codeSnippet">
+					&lt;style&gt; .internalStyle { color: blue; font-size: 18px; }
+					&lt;/style&gt;
+				</code>
+				<style>
+					.internalStyle {
+						color: blue;
+						font-size: 18px;
+					}
+				</style>
+				<p>Com isso o resultado será:</p>
+				<p class="internalStyle">Lorem ipsum</p>
+			</li>
+			<li>
+				<strong>Estilos externos:</strong> os estilos externos são definidos em
+				um arquivo CSS separado e vinculados à página usando a tag
+				<code class="codeSnippet">&lt;link&gt;</code>, por exemplo, no
+				<code class="codeSnippet">&lt;head&gt;</code> da página:
+				<code class="codeSnippet"
+					>&lt;link rel="stylesheet" href="styles.css" /&gt;</code
+				>
+				Considerando que o arquivo styles.css contém o seguinte código:
+				<code class="codeSnippet">
+					.externalStyle { color: green; font-size: 20px; }
+				</code>
+				<link rel="stylesheet" href="styles.css" />
+				<p>O resultado esperado é:</p>
+				<p class="externalStyle">Lorem ipsum</p>
+			</li>
+		</ul>
+	</body>
+</html>
